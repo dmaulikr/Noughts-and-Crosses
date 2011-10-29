@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  Item.h
 //  Noughts & Crosses. Version 0.9
 //  Created by Rafal Sroka on 30.10.2011.
 //
@@ -24,11 +24,20 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+typedef enum {
+    ItemTypeUndefined,
+    ItemTypeNought,
+    ItemTypeCross
+} ItemType;
 
-@property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) UINavigationController *navigationController;
+@interface Item : NSObject {
+    ItemType type;
+}
+@property (nonatomic, assign) ItemType type;
 
+-(id)initWithType:(ItemType) itemType;
++(Item *)itemWithType:(ItemType) itemType;
+-(BOOL)isSameTypeAs:(Item *)item;
 @end

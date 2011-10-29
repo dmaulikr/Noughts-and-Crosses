@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  GameViewController.h
 //  Noughts & Crosses. Version 0.9
 //  Created by Rafal Sroka on 30.10.2011.
 //
@@ -25,10 +25,22 @@
 //  THE SOFTWARE.
 
 #import <UIKit/UIKit.h>
+#import "Game.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@class FieldButton;
+@interface GameViewController : UIViewController <GameDelegate, UIActionSheetDelegate>{
 
-@property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) UINavigationController *navigationController;
+    IBOutlet UIView *gameView;
+    Game *game;
+}
+
+@property(nonatomic, retain) Game *game;
+
+-(IBAction)tappedFieldWithButton:(id)sender;
+-(void)infoAction:(id)sender;
+-(void)newGameAction:(id)sender;
+-(void)earthquake:(UIView*)itemView;
+-(void)earthquakeEnded:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context;
+-(FieldButton *)fieldForLocation:(CGPoint)location;
 
 @end

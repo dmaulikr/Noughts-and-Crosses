@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  Game.h
 //  Noughts & Crosses. Version 0.9
 //  Created by Rafal Sroka on 30.10.2011.
 //
@@ -23,12 +23,27 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
+#import <Foundation/Foundation.h>
+#import "Board.h"
+#import "GameDelegate.h"
 
-#import <UIKit/UIKit.h>
+@interface Game : NSObject {
+    
+    Board *board;
+    id<GameDelegate> delegate;
+    ItemType itemTypeToMove;
+    BOOL isOver;
+    int movesCount;
+}
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@property(nonatomic, retain) Board *board;
+@property(nonatomic, assign) id<GameDelegate> delegate;
+@property(nonatomic, assign) ItemType itemTypeToMove;
 
-@property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) UINavigationController *navigationController;
-
+-(void)updateFieldAtLocation:(CGPoint)location;
+-(BOOL)isOver;
+-(void)create;
+-(BOOL)check;
+-(void)checkWithLocation:(CGPoint)location;
+-(void)updateFieldAtLocation:(CGPoint)location;
 @end

@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  GameDelegate.h
 //  Noughts & Crosses. Version 0.9
 //  Created by Rafal Sroka on 30.10.2011.
 //
@@ -24,11 +24,12 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@class Game;
+@protocol GameDelegate <NSObject>
 
-@property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) UINavigationController *navigationController;
-
+@optional
+-(void)game:(Game *)game didFinishWithWinningItem:(ItemType)itemType;
+-(void)game:(Game *)game didUpdateItemAtLocation:(CGPoint)point;
 @end

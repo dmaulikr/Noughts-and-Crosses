@@ -1,9 +1,11 @@
 //
-//  AppDelegate.h
+//  Settings.h
 //  Noughts & Crosses. Version 0.9
 //  Created by Rafal Sroka on 30.10.2011.
 //
+
 //  This code is distributed under the terms and conditions of the MIT license.
+
 //  Copyright (c) 2011 Rafal Sroka
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -24,11 +26,11 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-#import <UIKit/UIKit.h>
+#ifndef Game_Settings_h
+#define Game_Settings_h
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#define kCircleImage [UIImage imageNamed:@"circle"]
+#define kCrossImage [UIImage imageNamed:@"cross"]
+#define kGameFieldPadding 10
 
-@property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) UINavigationController *navigationController;
-
-@end
+#endif

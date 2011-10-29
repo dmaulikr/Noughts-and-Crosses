@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  Item.m
 //  Noughts & Crosses. Version 0.9
 //  Created by Rafal Sroka on 30.10.2011.
 //
@@ -24,11 +24,35 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-#import <UIKit/UIKit.h>
+#import "Item.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@implementation Item
+@synthesize type;
 
-@property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) UINavigationController *navigationController;
+-(id)initWithType:(ItemType) itemType {
+    
+    self = [super init];
+    
+    if (self) {
+        self.type = itemType;
+    }
+    return self;
+}
+
++(Item *)itemWithType:(ItemType) itemType {
+ 
+    Item *item = [[[Item alloc] initWithType:itemType] autorelease];
+    return item;
+}
+
+-(BOOL)isSameTypeAs:(Item *)item {
+
+    if (self.type == item.type) return YES;
+    else return NO;
+}
+
+-(void)dealloc {
+    [super dealloc];
+}
 
 @end

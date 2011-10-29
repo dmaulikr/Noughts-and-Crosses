@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  Board.h
 //  Noughts & Crosses. Version 0.9
 //  Created by Rafal Sroka on 30.10.2011.
 //
@@ -24,11 +24,21 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Item.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface Board : NSObject {
+    int width;
+    int height;
+    NSMutableArray* items;
+}
 
-@property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) UINavigationController *navigationController;
+@property(nonatomic, readonly, assign) int width;
+@property(nonatomic, readonly, assign) int height;
+@property(nonatomic, retain) NSMutableArray* items;
 
+-(id)initWithSize:(CGSize )size;
+-(void)insertItem:(Item *)item atLocation:(CGPoint)location;
+-(Item *)itemForLocation:(CGPoint)location;
+-(void)initItems;
 @end
