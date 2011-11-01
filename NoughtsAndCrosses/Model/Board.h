@@ -1,5 +1,5 @@
 //
-//  GameViewController.h
+//  Board.h
 //  Noughts & Crosses. Version 0.9
 //  Created by Rafal Sroka on 30.10.2011.
 //
@@ -24,58 +24,57 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-#import <UIKit/UIKit.h>
-#import "Game.h"
+#import <Foundation/Foundation.h>
+#import "Item.h"
 
 /**
- Class to present and manage game interface.
+ Class to represent a game board in Noughts and Crosses.  
  */
-@class FieldButton;
-@interface GameViewController : UIViewController <GameDelegate, UIActionSheetDelegate>{
-
+@interface Board : NSObject {
     /**
-     A view on which game board is shown
+     Width of the game board. Number of columns. Note that this is not a width specified in pixels.
      */
-    IBOutlet UIView *gameView;
+    int width;
     
     /**
-     Game instance.
+     Height of the game board. Number of rows. Note that this is not a height specified in pixels.
      */
-    Game *game;
+    int height;
+    
+    /**
+     Array with game items.
+     */
+    NSMutableArray* items;
 }
 
-@property(nonatomic, retain) Game *game;
-@property(nonatomic, retain) IBOutlet UIView *gameView;
+@property(nonatomic, readonly, assign) int width;
+@property(nonatomic, readonly, assign) int height;
+@property(nonatomic, retain) NSMutableArray* items;
 
 /**
- Action sent by field buttons upon the UITouchUpInside event.
- @param sender the sender object that invoked the action.
+ Initialize a new game board with desired size.
+ @param size the size of the board. Number of columns and rows.
+ @returns a newly initialized game board
  */
--(IBAction)tappedFieldWithButton:(id)sender;
+-(id)initWithSize:(CGSize )size;
 
 /**
- Shows an alert with information.
- @param sender the sender object that invoked the action.
+ Initialize a new game board with desired size
+ @param item the size of the board. Number of columns and rows.
+ @location item the size of the board. Number of columns and rows.
  */
--(void)infoAction:(id)sender;
+-(void)insertItem:(Item *)item atLocation:(CGPoint)location;
 
 /**
- Starts a new game.
- @param sender the sender object that invoked the action.
+ Get the item at specified location
+ @param location the location of the item
+ @returns item at specified location or NSNull if there is no item.
  */
--(void)newGameAction:(id)sender;
+-(Item *)itemForLocation:(CGPoint)location;
 
 /**
- Performs shake style shaking animation with the given view.
- @param itemView the view that will be shaken.
+ Initialize items array
  */
--(void)shake:(UIView*)itemView;
-
-/**
- Gets a FieldButton instance with the location on the game board given.
- @param location the location of the item on the game board (The location must be specified in Boards coordinates - column and row).
- @returns FieldButton instance.
- */
--(FieldButton *)fieldForLocation:(CGPoint)location;
+-(void)initItems;
 
 @end

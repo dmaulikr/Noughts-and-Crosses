@@ -31,7 +31,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 @implementation GameViewController
-@synthesize game;
+@synthesize game, gameView;
 
 #pragma mark -
 #pragma mark UIActionSheetDelegate
@@ -68,7 +68,7 @@
     FieldButton *field = (FieldButton *)sender;
     
     if ([game isOver]) {
-        [self earthquake:field];
+        [self shake:field];
     }
     else {
         [game updateFieldAtLocation:field.location];
@@ -237,29 +237,29 @@
 }
 
 #pragma mark -
-#pragma mark Earthquake animations
+#pragma mark shake animations
 
--(void)earthquake:(UIView*)itemView {
+-(void)shake:(UIView*)itemView {
     CGFloat t = 2.0;
 	
     CGAffineTransform leftQuake  = CGAffineTransformTranslate(CGAffineTransformIdentity, t, -t);
     CGAffineTransform rightQuake = CGAffineTransformTranslate(CGAffineTransformIdentity, -t, t);
 	
-    itemView.transform = leftQuake;  // starting point
+    itemView.transform = leftQuake;
 	
-    [UIView beginAnimations:@"earthquake" context:itemView];
-    [UIView setAnimationRepeatAutoreverses:YES]; // important
+    [UIView beginAnimations:@"shake" context:itemView];
+    [UIView setAnimationRepeatAutoreverses:YES];
     [UIView setAnimationRepeatCount:5];
     [UIView setAnimationDuration:0.07];
     [UIView setAnimationDelegate:self];
-    [UIView setAnimationDidStopSelector:@selector(earthquakeEnded:finished:context:)];
+    [UIView setAnimationDidStopSelector:@selector(shakeEnded:finished:context:)];
 	
-    itemView.transform = rightQuake; // end here & auto-reverse
+    itemView.transform = rightQuake;
 	
     [UIView commitAnimations];
 }
 
--(void)earthquakeEnded:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context {
+-(void)shakeEnded:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context {
     if ([finished boolValue]) {
         UIView* item = (UIView *)context;
         item.transform = CGAffineTransformIdentity;
@@ -287,6 +287,7 @@
 
 - (void)viewDidUnload {
     [super viewDidUnload];
+    self.gameView = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -294,6 +295,7 @@
 }
 
 - (void)dealloc {
+    [gameView release];
     [game release];
     [super dealloc];
 }

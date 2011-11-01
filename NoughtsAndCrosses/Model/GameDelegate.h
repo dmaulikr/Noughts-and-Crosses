@@ -1,5 +1,5 @@
 //
-//  GameViewController.h
+//  GameDelegate.h
 //  Noughts & Crosses. Version 0.9
 //  Created by Rafal Sroka on 30.10.2011.
 //
@@ -24,58 +24,28 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-#import <UIKit/UIKit.h>
-#import "Game.h"
+#import <Foundation/Foundation.h>
 
 /**
- Class to present and manage game interface.
+ Game delegate is informed about updates in game progress and may react f.e update UI.
  */
-@class FieldButton;
-@interface GameViewController : UIViewController <GameDelegate, UIActionSheetDelegate>{
+@class Game;
+@protocol GameDelegate <NSObject>
 
-    /**
-     A view on which game board is shown
-     */
-    IBOutlet UIView *gameView;
-    
-    /**
-     Game instance.
-     */
-    Game *game;
-}
-
-@property(nonatomic, retain) Game *game;
-@property(nonatomic, retain) IBOutlet UIView *gameView;
+@optional
 
 /**
- Action sent by field buttons upon the UITouchUpInside event.
- @param sender the sender object that invoked the action.
+ Informs the delegate that Crosses or Noughts won.
+ @param game the instance of the game.
+ @param itemType type of the item - Cross or Nought - that won the item.
  */
--(IBAction)tappedFieldWithButton:(id)sender;
+-(void)game:(Game *)game didFinishWithWinningItem:(ItemType)itemType;
 
 /**
- Shows an alert with information.
- @param sender the sender object that invoked the action.
+ Informs the delegate that a field on the game board changed its state.
+ @param game the instance of the game.
+ @param point the location of the item that was updated.
  */
--(void)infoAction:(id)sender;
-
-/**
- Starts a new game.
- @param sender the sender object that invoked the action.
- */
--(void)newGameAction:(id)sender;
-
-/**
- Performs shake style shaking animation with the given view.
- @param itemView the view that will be shaken.
- */
--(void)shake:(UIView*)itemView;
-
-/**
- Gets a FieldButton instance with the location on the game board given.
- @param location the location of the item on the game board (The location must be specified in Boards coordinates - column and row).
- @returns FieldButton instance.
- */
--(FieldButton *)fieldForLocation:(CGPoint)location;
+-(void)game:(Game *)game didUpdateItemAtLocation:(CGPoint)point;
 
 @end

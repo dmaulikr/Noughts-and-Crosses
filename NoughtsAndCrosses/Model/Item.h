@@ -1,5 +1,5 @@
 //
-//  GameViewController.h
+//  Item.h
 //  Noughts & Crosses. Version 0.9
 //  Created by Rafal Sroka on 30.10.2011.
 //
@@ -24,58 +24,46 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-#import <UIKit/UIKit.h>
-#import "Game.h"
+#import <Foundation/Foundation.h>
 
 /**
- Class to present and manage game interface.
+ Type of the item. Item can be of Cross, Nought or Undefined type.
  */
-@class FieldButton;
-@interface GameViewController : UIViewController <GameDelegate, UIActionSheetDelegate>{
+typedef enum {
+    ItemTypeUndefined,
+    ItemTypeNought,
+    ItemTypeCross
+} ItemType;
 
+/**
+ Class to represent an item - Cross or Nought in Noughts and Crosses.  
+ */
+@interface Item : NSObject {
     /**
-     A view on which game board is shown
+     Type of the item.
      */
-    IBOutlet UIView *gameView;
-    
-    /**
-     Game instance.
-     */
-    Game *game;
+    ItemType type;
 }
-
-@property(nonatomic, retain) Game *game;
-@property(nonatomic, retain) IBOutlet UIView *gameView;
+@property (nonatomic, assign) ItemType type;
 
 /**
- Action sent by field buttons upon the UITouchUpInside event.
- @param sender the sender object that invoked the action.
+ Initialize a new item with desired type.
+ @param type the type of the item. Cross, Nought or Undefined.
+ @returns a newly initialized item.
  */
--(IBAction)tappedFieldWithButton:(id)sender;
+-(id)initWithType:(ItemType) itemType;
 
 /**
- Shows an alert with information.
- @param sender the sender object that invoked the action.
+ Initialize an autoreleased item with desired type.
+ @param type the type of the item. Cross, Nought or Undefined.
+ @returns a newly initialized autoreleased item.
  */
--(void)infoAction:(id)sender;
++(Item *)itemWithType:(ItemType) itemType;
 
 /**
- Starts a new game.
- @param sender the sender object that invoked the action.
+ Check whether two items have same type.
+ @param item the item that will be checked.
+ @returns YES if items have the same type. NO if they types are different.
  */
--(void)newGameAction:(id)sender;
-
-/**
- Performs shake style shaking animation with the given view.
- @param itemView the view that will be shaken.
- */
--(void)shake:(UIView*)itemView;
-
-/**
- Gets a FieldButton instance with the location on the game board given.
- @param location the location of the item on the game board (The location must be specified in Boards coordinates - column and row).
- @returns FieldButton instance.
- */
--(FieldButton *)fieldForLocation:(CGPoint)location;
-
+-(BOOL)isSameTypeAs:(Item *)item;
 @end

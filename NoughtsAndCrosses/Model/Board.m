@@ -1,5 +1,5 @@
 //
-//  FieldButton.h
+//  Board.m
 //  Noughts & Crosses. Version 0.9
 //  Created by Rafal Sroka on 30.10.2011.
 //
@@ -23,17 +23,58 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
-#import <Foundation/Foundation.h>
 
-/**
- Class to represent a button on the game board.
- */
-@interface FieldButton : UIButton {
+#import "Board.h"
+
+@implementation Board
+@synthesize width, height, items;
+
+-(void)initItems {
     
-    /**
-     Location of the field button in game board coordinates.
-     */
-    CGPoint location;
+    if (!items) {
+        items = [[NSMutableArray alloc] initWithCapacity:height];
+        
+        for (int i=0; i<height; i++) {
+        
+            NSMutableArray *row = [[NSMutableArray alloc] initWithCapacity:width];
+            
+            for (int j=0; j<width; j++) [row addObject:[NSNull null]];
+            
+            [items addObject:row];
+            [row release];
+        }
+    }
 }
-@property(nonatomic, assign) CGPoint location;
+
+-(id)initWithSize:(CGSize )size {
+
+    self = [super init];
+    if (self) {
+        width = size.width;
+        height = size.height;
+        
+        [self initItems];
+    }
+    return self;
+}
+
+-(void)insertItem:(Item *)item atLocation:(CGPoint)location {
+    
+    NSMutableArray *row = [items objectAtIndex:location.y];
+    [row replaceObjectAtIndex:location.x withObject:item];
+}
+
+-(Item *)itemForLocation:(CGPoint)location {
+    
+    NSMutableArray *rowArray = [items objectAtIndex:location.y];
+    Item *item = [rowArray objectAtIndex:location.x];
+    
+    return item;
+}
+
+-(void)dealloc {
+    [items retain];
+    [super dealloc];
+}
+
 @end

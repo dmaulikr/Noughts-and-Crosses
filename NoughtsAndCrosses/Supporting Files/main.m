@@ -1,5 +1,5 @@
 //
-//  FieldButton.h
+//  main.m
 //  Noughts & Crosses. Version 0.9
 //  Created by Rafal Sroka on 30.10.2011.
 //
@@ -23,17 +23,14 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
-#import <Foundation/Foundation.h>
 
-/**
- Class to represent a button on the game board.
- */
-@interface FieldButton : UIButton {
-    
-    /**
-     Location of the field button in game board coordinates.
-     */
-    CGPoint location;
+#import <UIKit/UIKit.h>
+
+#import "AppDelegate.h"
+
+int main(int argc, char *argv[])
+{
+    @autoreleasepool {
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+    }
 }
-@property(nonatomic, assign) CGPoint location;
-@end
