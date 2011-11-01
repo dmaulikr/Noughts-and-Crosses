@@ -10,23 +10,24 @@
 		AF0A752D145C3E7C00EC6608 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0A7529145C3E7C00EC6608 /* GameViewController.m */; };
 		AF0A752E145C3E7C00EC6608 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF0A752A145C3E7C00EC6608 /* GameViewController.xib */; };
 		AF0A752F145C3E7C00EC6608 /* FieldButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0A752C145C3E7C00EC6608 /* FieldButton.m */; };
-		AF0A7537145C3E8B00EC6608 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0A7531145C3E8B00EC6608 /* Board.m */; };
-		AF0A7538145C3E8B00EC6608 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0A7533145C3E8B00EC6608 /* Item.m */; };
-		AF0A7539145C3E8B00EC6608 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0A7535145C3E8B00EC6608 /* Game.m */; };
-		AF0A753C145C3E9900EC6608 /* RSToast.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0A753B145C3E9900EC6608 /* RSToast.m */; };
-		AF0A7549145C3EE400EC6608 /* tile.png in Resources */ = {isa = PBXBuildFile; fileRef = AF0A753D145C3EE400EC6608 /* tile.png */; };
-		AF0A754A145C3EE400EC6608 /* tile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF0A753E145C3EE400EC6608 /* tile@2x.png */; };
-		AF0A754B145C3EE400EC6608 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = AF0A753F145C3EE400EC6608 /* circle.png */; };
-		AF0A754C145C3EE400EC6608 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = AF0A7540145C3EE400EC6608 /* cross.png */; };
-		AF0A754D145C3EE400EC6608 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = AF0A7541145C3EE400EC6608 /* background.png */; };
-		AF0A754E145C3EE400EC6608 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF0A7542145C3EE400EC6608 /* background@2x.png */; };
 		AFA12FC8145C3CAE00D6BE4E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA12FC7145C3CAE00D6BE4E /* UIKit.framework */; };
 		AFA12FCA145C3CAE00D6BE4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA12FC9145C3CAE00D6BE4E /* Foundation.framework */; };
 		AFA12FCC145C3CAE00D6BE4E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA12FCB145C3CAE00D6BE4E /* CoreGraphics.framework */; };
 		AFA12FD2145C3CAE00D6BE4E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AFA12FD0145C3CAE00D6BE4E /* InfoPlist.strings */; };
-		AFA12FD4145C3CAE00D6BE4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA12FD3145C3CAE00D6BE4E /* main.m */; };
 		AFA12FD8145C3CAE00D6BE4E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA12FD7145C3CAE00D6BE4E /* AppDelegate.m */; };
 		AFA12FF1145C3D6600D6BE4E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA12FF0145C3D6500D6BE4E /* QuartzCore.framework */; };
+		AFBD9B3F145D945D00ECFB31 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBD9B39145D945D00ECFB31 /* Board.m */; };
+		AFBD9B40145D945D00ECFB31 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBD9B3B145D945D00ECFB31 /* Game.m */; };
+		AFBD9B41145D945D00ECFB31 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBD9B3E145D945D00ECFB31 /* Item.m */; };
+		AFBD9B49145D946700ECFB31 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBD9B43145D946700ECFB31 /* background.png */; };
+		AFBD9B4A145D946700ECFB31 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBD9B44145D946700ECFB31 /* background@2x.png */; };
+		AFBD9B4B145D946700ECFB31 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBD9B45145D946700ECFB31 /* circle.png */; };
+		AFBD9B4C145D946700ECFB31 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBD9B46145D946700ECFB31 /* cross.png */; };
+		AFBD9B4D145D946700ECFB31 /* tile.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBD9B47145D946700ECFB31 /* tile.png */; };
+		AFBD9B4E145D946700ECFB31 /* tile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AFBD9B48145D946700ECFB31 /* tile@2x.png */; };
+		AFBD9B56145D947400ECFB31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBD9B50145D947400ECFB31 /* main.m */; };
+		AFBD9B57145D947400ECFB31 /* NoughtsAndCrosses-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFBD9B51145D947400ECFB31 /* NoughtsAndCrosses-Info.plist */; };
+		AFBD9B58145D947400ECFB31 /* RSToast.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBD9B55145D947400ECFB31 /* RSToast.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,32 +37,32 @@
 		AF0A752A145C3E7C00EC6608 /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 		AF0A752B145C3E7C00EC6608 /* FieldButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldButton.h; sourceTree = "<group>"; };
 		AF0A752C145C3E7C00EC6608 /* FieldButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldButton.m; sourceTree = "<group>"; };
-		AF0A7530145C3E8B00EC6608 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
-		AF0A7531145C3E8B00EC6608 /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
-		AF0A7532145C3E8B00EC6608 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
-		AF0A7533145C3E8B00EC6608 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
-		AF0A7534145C3E8B00EC6608 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
-		AF0A7535145C3E8B00EC6608 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
-		AF0A7536145C3E8B00EC6608 /* GameDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDelegate.h; sourceTree = "<group>"; };
-		AF0A753A145C3E9900EC6608 /* RSToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSToast.h; sourceTree = "<group>"; };
-		AF0A753B145C3E9900EC6608 /* RSToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSToast.m; sourceTree = "<group>"; };
-		AF0A753D145C3EE400EC6608 /* tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tile.png; sourceTree = "<group>"; };
-		AF0A753E145C3EE400EC6608 /* tile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tile@2x.png"; sourceTree = "<group>"; };
-		AF0A753F145C3EE400EC6608 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
-		AF0A7540145C3EE400EC6608 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
-		AF0A7541145C3EE400EC6608 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
-		AF0A7542145C3EE400EC6608 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
 		AFA12FC3145C3CAE00D6BE4E /* NoughtsAndCrosses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoughtsAndCrosses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA12FC7145C3CAE00D6BE4E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AFA12FC9145C3CAE00D6BE4E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AFA12FCB145C3CAE00D6BE4E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		AFA12FCF145C3CAE00D6BE4E /* NoughtsAndCrosses-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NoughtsAndCrosses-Info.plist"; sourceTree = "<group>"; };
 		AFA12FD1145C3CAE00D6BE4E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AFA12FD3145C3CAE00D6BE4E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AFA12FD5145C3CAE00D6BE4E /* NoughtsAndCrosses-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NoughtsAndCrosses-Prefix.pch"; sourceTree = "<group>"; };
 		AFA12FD6145C3CAE00D6BE4E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AFA12FD7145C3CAE00D6BE4E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AFA12FF0145C3D6500D6BE4E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AFBD9B38145D945D00ECFB31 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
+		AFBD9B39145D945D00ECFB31 /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
+		AFBD9B3A145D945D00ECFB31 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		AFBD9B3B145D945D00ECFB31 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		AFBD9B3C145D945D00ECFB31 /* GameDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDelegate.h; sourceTree = "<group>"; };
+		AFBD9B3D145D945D00ECFB31 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		AFBD9B3E145D945D00ECFB31 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		AFBD9B43145D946700ECFB31 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		AFBD9B44145D946700ECFB31 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		AFBD9B45145D946700ECFB31 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+		AFBD9B46145D946700ECFB31 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
+		AFBD9B47145D946700ECFB31 /* tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tile.png; sourceTree = "<group>"; };
+		AFBD9B48145D946700ECFB31 /* tile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tile@2x.png"; sourceTree = "<group>"; };
+		AFBD9B50145D947400ECFB31 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AFBD9B51145D947400ECFB31 /* NoughtsAndCrosses-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NoughtsAndCrosses-Info.plist"; sourceTree = "<group>"; };
+		AFBD9B52145D947400ECFB31 /* NoughtsAndCrosses-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NoughtsAndCrosses-Prefix.pch"; sourceTree = "<group>"; };
+		AFBD9B54145D947400ECFB31 /* RSToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSToast.h; sourceTree = "<group>"; };
+		AFBD9B55145D947400ECFB31 /* RSToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSToast.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,29 +80,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AF0A7555145C3EF300EC6608 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				AF0A7530145C3E8B00EC6608 /* Board.h */,
-				AF0A7531145C3E8B00EC6608 /* Board.m */,
-				AF0A7532145C3E8B00EC6608 /* Item.h */,
-				AF0A7533145C3E8B00EC6608 /* Item.m */,
-				AF0A7534145C3E8B00EC6608 /* Game.h */,
-				AF0A7535145C3E8B00EC6608 /* Game.m */,
-				AF0A7536145C3E8B00EC6608 /* GameDelegate.h */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		AF3D0CA7145C9C6500FAED53 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				AF0A753A145C3E9900EC6608 /* RSToast.h */,
-				AF0A753B145C3E9900EC6608 /* RSToast.m */,
-			);
-			name = Utils;
-			sourceTree = "<group>";
-		};
 		AFA12FB8145C3CAE00D6BE4E = {
 			isa = PBXGroup;
 			children = (
@@ -139,38 +117,61 @@
 				AF0A752A145C3E7C00EC6608 /* GameViewController.xib */,
 				AF0A752B145C3E7C00EC6608 /* FieldButton.h */,
 				AF0A752C145C3E7C00EC6608 /* FieldButton.m */,
-				AF3D0CA7145C9C6500FAED53 /* Utils */,
-				AF0A7555145C3EF300EC6608 /* Model */,
-				AFA12FF2145C3D9C00D6BE4E /* Resources */,
 				AFA12FD6145C3CAE00D6BE4E /* AppDelegate.h */,
 				AFA12FD7145C3CAE00D6BE4E /* AppDelegate.m */,
-				AFA12FCE145C3CAE00D6BE4E /* Supporting Files */,
+				AFBD9B53145D947400ECFB31 /* Utils */,
+				AFBD9B37145D945D00ECFB31 /* Model */,
+				AFBD9B4F145D947400ECFB31 /* Supporting Files */,
+				AFBD9B42145D946700ECFB31 /* Resources */,
 			);
 			path = NoughtsAndCrosses;
 			sourceTree = "<group>";
 		};
-		AFA12FCE145C3CAE00D6BE4E /* Supporting Files */ = {
+		AFBD9B37145D945D00ECFB31 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AFA12FCF145C3CAE00D6BE4E /* NoughtsAndCrosses-Info.plist */,
-				AFA12FD0145C3CAE00D6BE4E /* InfoPlist.strings */,
-				AFA12FD3145C3CAE00D6BE4E /* main.m */,
-				AFA12FD5145C3CAE00D6BE4E /* NoughtsAndCrosses-Prefix.pch */,
+				AFBD9B38145D945D00ECFB31 /* Board.h */,
+				AFBD9B39145D945D00ECFB31 /* Board.m */,
+				AFBD9B3A145D945D00ECFB31 /* Game.h */,
+				AFBD9B3B145D945D00ECFB31 /* Game.m */,
+				AFBD9B3C145D945D00ECFB31 /* GameDelegate.h */,
+				AFBD9B3D145D945D00ECFB31 /* Item.h */,
+				AFBD9B3E145D945D00ECFB31 /* Item.m */,
 			);
-			name = "Supporting Files";
+			path = Model;
 			sourceTree = "<group>";
 		};
-		AFA12FF2145C3D9C00D6BE4E /* Resources */ = {
+		AFBD9B42145D946700ECFB31 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				AF0A753D145C3EE400EC6608 /* tile.png */,
-				AF0A753E145C3EE400EC6608 /* tile@2x.png */,
-				AF0A753F145C3EE400EC6608 /* circle.png */,
-				AF0A7540145C3EE400EC6608 /* cross.png */,
-				AF0A7541145C3EE400EC6608 /* background.png */,
-				AF0A7542145C3EE400EC6608 /* background@2x.png */,
+				AFBD9B43145D946700ECFB31 /* background.png */,
+				AFBD9B44145D946700ECFB31 /* background@2x.png */,
+				AFBD9B45145D946700ECFB31 /* circle.png */,
+				AFBD9B46145D946700ECFB31 /* cross.png */,
+				AFBD9B47145D946700ECFB31 /* tile.png */,
+				AFBD9B48145D946700ECFB31 /* tile@2x.png */,
 			);
-			name = Resources;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AFBD9B4F145D947400ECFB31 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AFBD9B50145D947400ECFB31 /* main.m */,
+				AFBD9B51145D947400ECFB31 /* NoughtsAndCrosses-Info.plist */,
+				AFBD9B52145D947400ECFB31 /* NoughtsAndCrosses-Prefix.pch */,
+				AFA12FD0145C3CAE00D6BE4E /* InfoPlist.strings */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AFBD9B53145D947400ECFB31 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AFBD9B54145D947400ECFB31 /* RSToast.h */,
+				AFBD9B55145D947400ECFB31 /* RSToast.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,12 +226,13 @@
 			files = (
 				AFA12FD2145C3CAE00D6BE4E /* InfoPlist.strings in Resources */,
 				AF0A752E145C3E7C00EC6608 /* GameViewController.xib in Resources */,
-				AF0A7549145C3EE400EC6608 /* tile.png in Resources */,
-				AF0A754A145C3EE400EC6608 /* tile@2x.png in Resources */,
-				AF0A754B145C3EE400EC6608 /* circle.png in Resources */,
-				AF0A754C145C3EE400EC6608 /* cross.png in Resources */,
-				AF0A754D145C3EE400EC6608 /* background.png in Resources */,
-				AF0A754E145C3EE400EC6608 /* background@2x.png in Resources */,
+				AFBD9B49145D946700ECFB31 /* background.png in Resources */,
+				AFBD9B4A145D946700ECFB31 /* background@2x.png in Resources */,
+				AFBD9B4B145D946700ECFB31 /* circle.png in Resources */,
+				AFBD9B4C145D946700ECFB31 /* cross.png in Resources */,
+				AFBD9B4D145D946700ECFB31 /* tile.png in Resources */,
+				AFBD9B4E145D946700ECFB31 /* tile@2x.png in Resources */,
+				AFBD9B57145D947400ECFB31 /* NoughtsAndCrosses-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,14 +243,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFA12FD4145C3CAE00D6BE4E /* main.m in Sources */,
 				AFA12FD8145C3CAE00D6BE4E /* AppDelegate.m in Sources */,
 				AF0A752D145C3E7C00EC6608 /* GameViewController.m in Sources */,
 				AF0A752F145C3E7C00EC6608 /* FieldButton.m in Sources */,
-				AF0A7537145C3E8B00EC6608 /* Board.m in Sources */,
-				AF0A7538145C3E8B00EC6608 /* Item.m in Sources */,
-				AF0A7539145C3E8B00EC6608 /* Game.m in Sources */,
-				AF0A753C145C3E9900EC6608 /* RSToast.m in Sources */,
+				AFBD9B3F145D945D00ECFB31 /* Board.m in Sources */,
+				AFBD9B40145D945D00ECFB31 /* Game.m in Sources */,
+				AFBD9B41145D945D00ECFB31 /* Item.m in Sources */,
+				AFBD9B56145D947400ECFB31 /* main.m in Sources */,
+				AFBD9B58145D947400ECFB31 /* RSToast.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +263,7 @@
 				AFA12FD1145C3CAE00D6BE4E /* en */,
 			);
 			name = InfoPlist.strings;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -318,8 +321,8 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NoughtsAndCrosses/NoughtsAndCrosses-Prefix.pch";
-				INFOPLIST_FILE = "NoughtsAndCrosses/NoughtsAndCrosses-Info.plist";
+				GCC_PREFIX_HEADER = "NoughtsAndCrosses/Supporting Files/NoughtsAndCrosses-Prefix.pch";
+				INFOPLIST_FILE = "NoughtsAndCrosses/Supporting Files/NoughtsAndCrosses-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -331,8 +334,8 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NoughtsAndCrosses/NoughtsAndCrosses-Prefix.pch";
-				INFOPLIST_FILE = "NoughtsAndCrosses/NoughtsAndCrosses-Info.plist";
+				GCC_PREFIX_HEADER = "NoughtsAndCrosses/Supporting Files/NoughtsAndCrosses-Prefix.pch";
+				INFOPLIST_FILE = "NoughtsAndCrosses/Supporting Files/NoughtsAndCrosses-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
