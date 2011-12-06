@@ -1,12 +1,17 @@
 Noughts and Crosses
 =============
 
-This project is a complete Noughts and Crosses game for iPhone released under the MIT license. For a brief information about the game and rules refer to [wikipedia](http://en.wikipedia.org/wiki/Noughts_%26_Crosses). Although the game, rules and implementation is rather trivial, it took me several evenings to code it. It was made for educational reasons and covers such topics as:
+Everybody knows what Tic Tac Toe or Noughts and Crosses game is. Everyone has played it. It is simple, trivial or someone may even say stupid. Whateverm I made a full, complete working iPhone game – Noughts and Crosses. For those who still don’t know what I am talking about please take a look at  a brief information about the rules and origins of the game at [wikipedia](http://en.wikipedia.org/wiki/Noughts_%26_Crosses).
 
+Although the game, its rules and implementation are rather trivial, it took me several evenings to code it. It was made just for fun to show my coding etiquette and my development habits. There is also another reason – I decided to create something that may help those that start messing with iOS development. The project covers such topics as:
+    
     - UIView animations
     - Protocols and delegates
     - Custom UI components
-    - And many others
+    - Playing with UIActionsheet, UIAlertView
+    - Creation of UI controls from code
+    - CALayers (adding shadows, rounded corners)
+
 
 To present some short notifications about game progress, I needed an equivalent of Android’s Toast component. That was a reason for developing a RSToast class – a UI component that presents a short message and disappears after a short time without the need for tapping on it. Current version of RSToast is very simple. However, I will extend it to support icons and add some helper methods for customizing its appearance.
 
